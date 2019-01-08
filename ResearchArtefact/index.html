@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
-  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
-  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css"> <!--Defines the CSS script being used-->
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css"> <!--Defines the CSS script being used-->
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script> <!--Defines the JS script being used-->
 </head>
 <body>
-  <ons-splitter>
+  <ons-splitter> 
     <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
       <ons-page>
         <ons-list>
-          <ons-list-item onclick="fn.load('index.html')" tappable>
+          <ons-list-item onclick="fn.load('index.html')" tappable> <!--Creates an onclick button that will load up the specified html file-->
             Home
           </ons-list-item>
-          <ons-list-item onclick="fn.load('Introduction.html')" tappable>
+          <ons-list-item onclick="fn.load('Introduction.html')" tappable> <!--Creates an onclick button that will load up the specified html file-->
             Introduction
           </ons-list-item>
-          <ons-list-item onclick="fn.load('about.html')" tappable>
+          <ons-list-item onclick="fn.load('about.html')" tappable>                      <!--Creates a splitter menu on the side of the application-->
             3-man Rotation part 1
           </ons-list-item>
-          <ons-list-item onclick="fn.load('about.html')" tappable>
+          <ons-list-item onclick="fn.load('about.html')" tappable> <!--Creates an onclick button that will load up the specified html file-->
             3-man Rotation part 2
           </ons-list-item>
-          <ons-list-item onclick="fn.load('about.html')" tappable>
+          <ons-list-item onclick="fn.load('about.html')" tappable> <!--Creates an onclick button that will load up the specified html file-->
             3-man Rotation part 3
           </ons-list-item>
-          <ons-list-item onclick="fn.load('about.html')" tappable>
+          <ons-list-item onclick="fn.load('about.html')" tappable> <!--Creates an onclick button that will load up the specified html file-->
             3-man Rotation part 4
           </ons-list-item>
         </ons-list>
@@ -37,8 +37,8 @@
   <template id="home.html">
     <ons-page>
       <ons-toolbar>
-        <div class="left">
-          <ons-toolbar-button onclick="fn.open()">
+        <div class="left"> 
+          <ons-toolbar-button onclick="fn.open()">        <!--Creates a button on the splitter menu-->
             <ons-icon icon="md-menu"></ons-icon>
           </ons-toolbar-button>
         </div>
@@ -46,17 +46,17 @@
           Home
         </div>
       </ons-toolbar>
-      <p style="font-size: 2em; text-align: left; padding-top: 20px; padding-left: 20px;">
-        Welcome to this visual tool for Rocket League.
+      <p style="font-size: 2em; text-align: left; padding-top: 20px; padding-left: 20px;"> <!--Font adjustments made on this line-->
+        Welcome to this visual tool for Rocket League. <!--Text-->
       </p>
-      <p style="font-size: 2em; text-align: left; padding-top: 20px; padding-left: 20px;">
-      This visual tool will help explain what a 3 man rotation is and how it can be implemented.
+      <p style="font-size: 2em; text-align: left; padding-top: 20px; padding-left: 20px;"> <!--Font adjustments made on this line-->
+      This visual tool will help explain what a 3 man rotation is and how it can be implemented. <!--Text-->
     </p>
-    <p style="font-size: 2em; text-align: left; padding-top: 20px; padding-left: 20px;">
-      There will be several lessons on this tool and by the end you should be able to implement this tactic into your playstyle with your team.
+    <p style="font-size: 2em; text-align: left; padding-top: 20px; padding-left: 20px;"> <!--Font adjustments made on this line-->
+      There will be several lessons on this tool and by the end you should be able to implement this tactic into your playstyle with your team. <!--Text-->
     </p>
-    <p style="font-size: 2em; text-align: left; padding-top: 20px; padding-left: 20px;">
-      When you are ready you can swipe the menu over to the right and proceed with the Introduction section
+    <p style="font-size: 2em; text-align: left; padding-top: 20px; padding-left: 20px;"> <!--Font adjustments made on this line-->
+      When you are ready you can swipe the menu over to the right and proceed with the Introduction section <!--Text-->
     </p>
     </ons-page>
   </template>
@@ -65,7 +65,7 @@
     <ons-page>
       <ons-toolbar>
         <div class="left">
-          <ons-toolbar-button onclick="fn.open()">
+          <ons-toolbar-button onclick="fn.open()">        <!--Creates a button on the splitter menu-->
             <ons-icon icon="md-menu"></ons-icon>
           </ons-toolbar-button>
         </div>
@@ -80,7 +80,7 @@
     <ons-page>
       <ons-toolbar>
         <div class="left">
-          <ons-toolbar-button onclick="fn.open()">
+          <ons-toolbar-button onclick="fn.open()">        <!--Creates a button on the splitter menu-->
             <ons-icon icon="md-menu"></ons-icon>
           </ons-toolbar-button>
         </div>
