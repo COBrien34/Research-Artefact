@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+</head>
+<body>
+  <ons-splitter>
+    <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+      <ons-page>
+        <ons-list>
+          <ons-list-item onclick="fn.load('index.html')" tappable>
+            Home
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('Introduction.html')" tappable>
+            Introduction
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('about.html')" tappable>
+            3-man Rotation part 1
+          </ons-list-item>
+        </ons-list>
+      </ons-page>
+    </ons-splitter-side>
+    <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+  </ons-splitter>
+  
+  <template id="home.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Home
+        </div>
+      </ons-toolbar>
+      <p style="font-size: 2em; text-align: left; padding-top: 20px; padding-left: 20px;">
+        Welcome to this visual tool for Rocket League.
+      </p>
+      <p style="font-size: 2em; text-align: left; padding-top: 20px; padding-left: 20px;">
+      This visual tool will help explain what a 3 man rotation is and how it can be implemented.
+    </p>
+    <p style="font-size: 2em; text-align: left; padding-top: 20px; padding-left: 20px;">
+      There will be several lessons on this tool and by the end you should be able to implement this tactic into your playstyle with your team.
+    </p>
+    <p style="font-size: 2em; text-align: left; padding-top: 20px; padding-left: 20px;">
+      When you are ready you can swipe the menu over to the right and proceed with the Introduction section
+    </p>
+    </ons-page>
+  </template>
+  
+  <template id="Introduction.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Introduction
+        </div>
+      </ons-toolbar>
+    </ons-page>
+  </template>
+  
+  <template id="about.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          About
+        </div>
+      </ons-toolbar>
+    </ons-page>
+  </template>
+</body>
+</html>
