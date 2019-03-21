@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<style>
+#table_1 {
+    background-color: black;
+    border: 4px solid black;
+    width: 420px;
+    height: 360px; /*This defines the table and all its properties for the quiz*/
+    padding-right: 50px;
+    color:white;
+    text-align: center;
+}
+.button {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none; /*This defines the 'Next Section' button and all its properties*/
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  position: center;
+  margin-top: 50px;
+}
+</style>   
+
+<div id="table_1">
+
+<h2>Quiz</h2>
+<hr> 
+<p id="question01"></p>
+<p id="msg01"></p>
+<br />
+<br />
+<div id="starter01">
+<button onclick="begin001()" id="b001">Begin</button><br />
+</div>
+<p id="n001"></p>
+
+<script>
+function begin001(){
+    document.getElementById("question01").innerHTML = "Why is a playbook nescessary for team sports?" + "<br /><br /><br />" + "<button onclick=function1() id=q1>Because it looks pretty</button><br />" + "<button onclick=function2() id=q2>It allows a team to setup a handful of different plays to use in game situations</button><br />" + "<button onclick=function3() id=q3>It allows the other team to spy on you</button><br />"; //This defines answers and also the ID of all the answers
+    document.getElementById("starter01").innerHTML = "";//Hiding a button
+}
+function function1(){
+    document.getElementById("question01").innerHTML = "Incorrect"; //Defining the answer and whether or not its is correct or incorrect
+    document.getElementById("starter01").innerHTML = "";//Hiding a button
+    document.getElementById("n001").innerHTML = "<button onclick=nxt1()>Next</button><br />"; //Creating the next button
+}
+function function2(){
+    document.getElementById("question01").innerHTML = "Correct"; //Defining the answer and whether or not its is correct or incorrect
+    document.getElementById("starter01").innerHTML = "";//Hiding a button
+    document.getElementById("n001").innerHTML = "<button onclick=nxt1()>Next</button><br />";//Creating the next button
+}
+function function3(){
+    document.getElementById("question01").innerHTML = "Incorrect"; //Defining the answer and whether or not its is correct or incorrect
+    document.getElementById("starter01").innerHTML = "";//Hiding a button
+    document.getElementById("n001").innerHTML = "<button onclick=nxt1()>Next</button><br />";//Creating the next button
+}
+function nxt1(){
+    document.getElementById("question01").innerHTML = "If your team starts with two players parallel to eachother, what happens?" + "<br /><br /><br />" + "<button onclick=function4() id=q4>Both players go for it and see eachother and then both pull out, so the kickoff is uncontested</button><br />" + "<button onclick=function5() id=q5>Both of the players go for it, leaving the last player by themselves</button><br />" + "<button onclick=function6() id=q6>One of the players will call for it</button><br />";//This defines answers and also the ID of all the answers
+    document.getElementById("n001").innerHTML = ""; //Hiding a button
+}
+function function4(){
+    document.getElementById("question01").innerHTML = "Incorrect";//Defining the answer and whether or not its is correct or incorrect
+    document.getElementById("starter01").innerHTML = "";//Hiding a button
+    document.getElementById("n001").innerHTML = "<button onclick=nxt2()>Next</button><br />";//Creating the next button
+}
+function function5(){
+    document.getElementById("question01").innerHTML = "Incorrect";//Defining the answer and whether or not its is correct or incorrect
+    document.getElementById("starter01").innerHTML = "";//Hiding a button
+    document.getElementById("n001").innerHTML = "<button onclick=nxt2()>Next</button><br />";//Creating the next button
+}
+function function6(){
+    document.getElementById("question01").innerHTML = "Correct";//Defining the answer and whether or not its is correct or incorrect
+    document.getElementById("starter01").innerHTML = "";//Hiding a button
+    document.getElementById("n001").innerHTML = "<button onclick=nxt2()>Next</button><br />";//Creating the next button
+}
+function nxt2(){
+    document.getElementById("question01").innerHTML = ""; //Hiding a button
+    document.getElementById("msg01").innerHTML = "End of Quiz"; //End of quiz screen
+    document.getElementById("n001").innerHTML = "";//Hiding a button
+}
+</script>
+</div>
+<a href="3-Man Rotation part 2.html" class="button">Next Section</a> <!--Links the button to the next webpage-->
+</body>
+</html>
